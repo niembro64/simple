@@ -14,11 +14,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
+    <!-- <link
       id="icon"
       rel="shortcut icon"
-      href="{{ url_for('static', filename='en.png') }}"
-    />
+      href="{{ url_for('static', filename='/assets/en.png') }}"
+    /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -31,7 +31,7 @@
     >
       <div id="glow" class="d-flex align-items-center flex-column p-0 m-0">
         <h3>Eric Niemeyer</h3>
-        <span>Full-Stack Projects</span>
+        <span>Resume</span>
       </div>
     </div>
     <div
@@ -41,15 +41,15 @@
       <div id="goaway500" class="bbb" onclick="growQr(this)">
         <b><small id="resume">Mobile</small></b>
       </div>
-      <a class="bbb" href="../static/Eric_Niemeyer_v68.pdf" download>
-        <img id="qr" src="../static/dl.png" alt="x" width="14" height="14" />
+      <a class="bbb" href="./assets/Eric_Niemeyer_v68.pdf" download>
+        <img id="qr" src="./assets/dl.png" alt="x" width="14" height="14" />
         <b><small id="resume"> Resume</small></b></a
       >
       <a class="bbb" href="https://github.com/niembro64"
-        ><img src="../static/GitHub_Logo.png" height="20" alt=""
+        ><img src="./assets/GitHub_Logo.png" height="20" alt=""
       /></a>
       <a class="bbb" href="https://www.linkedin.com/in/eric-niemo/"
-        ><img src="../static/Linkedin-logo-png.png" height="18" alt=""
+        ><img src="./assets/Linkedin-logo-png.png" height="18" alt=""
       /></a>
     </div>
     <div id="tablediv">
@@ -57,7 +57,7 @@
         id="thhh"
         class="table table-light table-striped table-hover table-borderless"
       >
-        <thead class="table text-dark">
+        <thead class="table text-light">
           <tr>
             <th scope="col" id="goaway500" class="text-center"></th>
             <th id="goaway300" scope="col"></th>
@@ -76,7 +76,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/desktop_icon.png"
+                src="./assets/desktop_icon.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -86,7 +86,7 @@
               <div class="thumbHolder">
                 <img
                   id="thumb"
-                  src="../static/gif_design.gif"
+                  src="./assets/gif_design.gif"
                   class="border border-dark rounded"
                   alt="x"
                   height="150"
@@ -98,7 +98,7 @@
                 class="btn btn-primary d-grid d-flex align-items-center flex-column"
                 href="http://design.niembro64.com/"
               >
-                <img src="../static/dtb.png" alt="x" height="40" />
+                <img src="./assets/dtb.png" alt="x" height="40" />
                 <span class="ttt">Design</span>
               </a>
             </td>
@@ -108,7 +108,7 @@
                 width="60"
               >
                 <img
-                  src="../static/html_css_js.png"
+                  src="./assets/html_css_js.png"
                   class="rounded"
                   alt="x"
                   width="50"
@@ -139,7 +139,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/controller.png"
+                src="./assets/controller.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -153,8 +153,8 @@
                 class="btn btn-primary d-grid d-flex align-items-center flex-column"
                 href="http://smashed.niembro64.com/"
               >
-                <!-- <img src="../static/dmtb.png" alt="x" height="40" /> -->
-                <img src="../static/dtb.png" alt="x" height="40" />
+                <!-- <img src="./assets/dmtb.png" alt="x" height="40" /> -->
+                <img src="./assets/dtb.png" alt="x" height="40" />
 
                 <span class="ttt">Smashed</span>
               </a>
@@ -164,13 +164,13 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/p3.png"
+                  src="./assets/p3.png"
                   class="rounded"
                   alt="x"
                   width="100"
                 />
                 <!-- <img
-                  src="../static/table.png"
+                  src="./assets/table.png"
                   class="rounded"
                   alt="x"
                   width="100"
@@ -198,7 +198,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/skull_and_crossbones.png"
+                src="./assets/skull_and_crossbones.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -208,7 +208,7 @@
               <div class="thumbHolder">
                 <img
                   id="thumb"
-                  src="../static/gif_pirates.gif"
+                  src="./assets/gif_pirates.gif"
                   class="border border-dark rounded"
                   alt="x"
                   height="150"
@@ -220,7 +220,7 @@
                 class="btn btn-primary d-grid d-flex align-items-center flex-column"
                 href="http://pirates.niembro64.com/"
               >
-                <img src="../static/dtb.png" alt="x" height="40" />
+                <img src="./assets/dtb.png" alt="x" height="40" />
                 <span class="ttt">Pirates</span>
               </a>
             </td>
@@ -229,7 +229,7 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/react.png"
+                  src="./assets/react.png"
                   class="rounded"
                   alt="x"
                   width="50"
@@ -262,7 +262,7 @@
               <div class="thumbHolder2">
                 <img
                   id="thumb2"
-                  src="../static/mongo_schema.png"
+                  src="./assets/mongo_schema.png"
                   class="border border-dark rounded"
                   height="60"
                   alt=""
@@ -275,7 +275,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/party.png"
+                src="./assets/party.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -285,7 +285,7 @@
               <div class="thumbHolder">
                 <img
                   id="thumb"
-                  src="../static/gif_events.gif"
+                  src="./assets/gif_events.gif"
                   class="border border-dark rounded"
                   alt="x"
                   height="150"
@@ -301,7 +301,7 @@
                                 ><small><i>Desktop</i></small></span
                             > -->
 
-                <img src="../static/dmtb.png" alt="x" height="40" />
+                <img src="./assets/dmtb.png" alt="x" height="40" />
 
                 <span class="ttt">Events</span>
               </a>
@@ -311,7 +311,7 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/csharp.png"
+                  src="./assets/csharp.png"
                   class="rounded"
                   alt="x"
                   width="50"
@@ -355,7 +355,7 @@
               <div class="thumbHolder2">
                 <img
                   id="thumb2"
-                  src="../static/erd_events.png"
+                  src="./assets/erd_events.png"
                   class="border border-dark rounded"
                   height="60"
                   alt=""
@@ -369,7 +369,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/movie.png"
+                src="./assets/movie.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -379,7 +379,7 @@
               <div class="thumbHolder">
                 <img
                   id="thumb"
-                  src="../static/gif_shows.gif"
+                  src="./assets/gif_shows.gif"
                   class="border border-dark rounded"
                   alt="x"
                   height="150"
@@ -394,7 +394,7 @@
                 <!-- <span
                                 ><small><i>Mobile</i></small></span
                             > -->
-                <img src="../static/mtb.png" alt="x" height="40" />
+                <img src="./assets/mtb.png" alt="x" height="40" />
 
                 <span class="ttt">Shows</span>
                 <!-- <span
@@ -407,7 +407,7 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/python.png"
+                  src="./assets/python.png"
                   class="rounded"
                   alt="x"
                   width="40"
@@ -456,7 +456,7 @@
               <div class="thumbHolder2">
                 <img
                   id="thumb2"
-                  src="../static/erd_shows.png"
+                  src="./assets/erd_shows.png"
                   class="border border-dark rounded"
                   height="60"
                   alt=""
@@ -469,7 +469,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/NA.png"
+                src="./assets/NA.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -479,7 +479,7 @@
               <div class="thumbHolder">
                 <img
                   id="thumb"
-                  src="../static/media.gif"
+                  src="./assets/media.gif"
                   class="border border-dark rounded"
                   alt="x"
                   height="150"
@@ -491,7 +491,7 @@
                 class="btn btn-primary d-grid d-flex align-items-center flex-column"
                 href="http://media.niembro64.com/wordpress/"
               >
-                <img src="../static/dmtb.png" alt="x" height="40" />
+                <img src="./assets/dmtb.png" alt="x" height="40" />
 
                 <span class="ttt">Media</span>
               </a>
@@ -501,7 +501,7 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/wordpress.png"
+                  src="./assets/wordpress.png"
                   class="rounded"
                   alt="x"
                   width="40"
@@ -530,7 +530,7 @@
               <img
                 id="icon"
                 class="border border-dark rounded"
-                src="../static/qblack.png"
+                src="./assets/qblack.png"
                 alt="x"
                 width="32"
                 height="32"
@@ -544,7 +544,7 @@
                 class="btn btn-primary d-grid d-flex align-items-center flex-column"
                 href="http://game.niembro64.com/"
               >
-                <img src="../static/dtb.png" alt="x" height="40" />
+                <img src="./assets/dtb.png" alt="x" height="40" />
 
                 <span class="ttt">Game</span>
               </a>
@@ -554,7 +554,7 @@
                 class="d-flex align-items-center justify-content-center py-2"
               >
                 <img
-                  src="../static/p3.png"
+                  src="./assets/p3.png"
                   class="rounded"
                   alt="x"
                   width="100"
@@ -597,7 +597,7 @@
     <div id="mobileqr">
       <img
         id="qrqr"
-        src="../static/http___niembro64.com.png"
+        src="./assets/http___niembro64.com.png"
         alt="x"
         onclick="growQr(this)"
       />
@@ -607,7 +607,37 @@
     <script
       type="text/javascript"
       language="javascript"
-      src="../static/script.js"
+      src="script.js"
     ></script>
+    <!-- <script
+      type="text/javascript"
+      language="javascript"
+      src="./assets/script.js"
+    ></script> -->
+    <div class="background">
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
   </body>
 </html>
